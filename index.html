@@ -32,8 +32,10 @@
                     colors: {
                         clifford: '#da373d',
                         'color-primary': '#B68C5A',
+                        'dark-01': '#111111',
                         'dark-02': '#414040',
                         'dark-03': '#707070',
+                        'dark-05': '#CFCFCF',
                         'dark-06': '#E7E7E7',
                         'dark-07': '#F3F3F3',
                     },
@@ -317,7 +319,7 @@
                 <div class="flex-1 grid grid-cols-1 lg:grid-cols-2">
                     <!-- first card -->
                     <div
-                        class="lg:max-w-[312px] mx-auto flex flex-col justify-center items-center border-r-2 border-dark-06 bg-dark-07 py-16 px-11">
+                        class="lg:w-[312px] w-11/12 mx-auto flex flex-col justify-center items-center border-r-2 border-dark-06 bg-dark-07 pt-5 px-11">
                         <figure>
                             <img src="images/location.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -329,7 +331,7 @@
                     </div>
                     <!-- second card -->
                     <div
-                        class="lg:max-w-[312px] mx-auto flex flex-col justify-center items-center bg-dark-07 py-16 px-11">
+                        class="lg:w-[312px] w-11/12 mx-auto flex flex-col justify-center items-center md:border-none border-r-2 bg-dark-07 pt-5 px-11">
                         <figure>
                             <img src="images/call.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -341,7 +343,7 @@
                     </div>
                     <!-- third card -->
                     <div
-                        class="lg:max-w-[312px] mx-auto flex flex-col justify-center items-center border-r-2 border-t-2 border-dark-06 bg-dark-07 py-16 px-11">
+                        class="lg:w-[312px] w-11/12 mx-auto flex flex-col justify-center items-center border-r-2 md:border-t-2 border-dark-06 bg-dark-07 pt-5 px-11">
                         <figure>
                             <img src="images/email.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -353,7 +355,7 @@
                     </div>
                     <!-- fourth card -->
                     <div
-                        class="lg:max-w-[312px] mx-auto flex flex-col justify-center items-center border-t-2 border-dark-06 bg-dark-07 py-16 px-11">
+                        class="lg:w-[312px] w-11/12 mx-auto flex flex-col justify-center items-center lg:border-r-0 lg:border-t-2 border-r-2 border-dark-06 bg-dark-07 pt-5 px-11">
                         <figure>
                             <img src="images/time.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -365,17 +367,49 @@
                     </div>
                 </div>
                 <div class="flex-1">
-                    <input class="input lg:w-11/12 bg-dark-07  m-5" type="text" placeholder="Your Name"><br>
-                    <input class="input lg:w-11/12 bg-dark-07  m-5" type="email" placeholder="Your Email"><br>
-                    <input class="input lg:w-11/12 bg-dark-07  m-5" type="text" placeholder="Subject"><br>
-                    <textarea class="textarea lg:w-11/12 bg-dark-07  mx-5" cols="10" rows="10"
-                        placeholder="Your Message" name="" id=""></textarea><br>
-                    <button class="btn bg-color-primary w-11/12 m-5 text-center">Send Message</button>
+                    <input class="input w-11/12 bg-dark-07  m-5" type="text" placeholder="Your Name"><br>
+                    <input class="input w-11/12 bg-dark-07  m-5" type="email" placeholder="Your Email"><br>
+                    <input class="input w-11/12 bg-dark-07  m-5" type="text" placeholder="Subject"><br>
+                    <textarea class="textarea w-11/12 bg-dark-07  mx-5" cols="10" rows="10" placeholder="Your Message"
+                        name="" id=""></textarea><br>
+                    <button class="btn bg-color-primary w-11/12 m-5 text-center text-white">Send Message</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="flex flex-col lg:flex-row justify-around items-center gap-10 bg-dark-01 text-white p-12">
+        <nav class="flex-1 space-y-3">
+            <img src="images/logo.png" alt="">
+            <p class="text-dark-05">There are many variations of passages of Lorem Ipsum available, but the majority
+                have suffered alteration in some form, by injected humour.</p>
+        </nav>
+        <nav class="flex-1 flex flex-col space-y-3">
+            <h6 class="text-2xl font-extrabold">Usefull Link</h6>
+            <a class="link link-hover text-dark-05">Homes</a>
+            <a class="link link-hover text-dark-05">About us</a>
+            <a class="link link-hover text-dark-05">Cases</a>
+            <a class="link link-hover text-dark-05">Blog</a>
+            <a class="link link-hover text-dark-05">Contact</a>
+        </nav>
+        <nav class="flex-1 space-y-3">
+            <h6 class="text-2xl font-extrabold">Contact Now</h6>
+            <p class="text-dark-05">555 4th 5t NW, Washington
+                DC 20530, United States</p>
+            <p class="text-dark-05">+88 01750 000 000</p>
+            <p class="text-dark-05">+88 01750 000 000</p>
+            <p class="text-dark-05">info@gmail.com</p>
+            <p class="text-dark-05">info@gmail.com</p>
+        </nav>
+        <form class="flex-1 space-y-3">
+            <h6 class="text-2xl font-extrabold">Subscribe</h6>
+            <p class="text-dark-05">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+            <div class="join relative">
+                <input type="text" placeholder="Email Address" class="input w-80" />
+                <button class="btn bg-color-primary absolute -right-1"><i
+                        class="fa-solid fa-square-arrow-up-right"></i></button>
+            </div>
+        </form>
+    </footer>
 </body>
 
 </html>
